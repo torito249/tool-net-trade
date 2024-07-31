@@ -7,6 +7,8 @@ const Sidebar: React.FC = () => {
     { text: "ホーム", href: "/" },
     { text: "案件管理", href: "/projects" },
     { text: "見積比較", href: "/estimates" },
+    { text: "港から探す", href: "/port-to-port" },
+    { text: "船名から探す", href: "/vessel-tracking" },
     { text: "データ分析", href: "/analysis" },
     { text: "貿易大学", href: "/university" },
   ];
