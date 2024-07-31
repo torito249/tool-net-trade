@@ -1,13 +1,14 @@
 import React from "react";
+import Link from "next/link";
 import { Box, List, ListItem, ListItemText, Typography } from "@mui/material";
 
 const Sidebar: React.FC = () => {
   const menuItems = [
-    "ホーム",
-    "案件管理",
-    "見積比較",
-    "データ分析",
-    "貿易大学",
+    { text: "ホーム", href: "/" },
+    { text: "案件管理", href: "/projects" },
+    { text: "見積比較", href: "/estimates" },
+    { text: "データ分析", href: "/analysis" },
+    { text: "貿易大学", href: "/university" },
   ];
 
   return (
@@ -30,8 +31,10 @@ const Sidebar: React.FC = () => {
             button
             key={index}
             sx={{ "&:hover": { backgroundColor: "#555" } }}
+            component={Link}
+            href={item.href}
           >
-            <ListItemText primary={item} sx={{ color: "#fff" }} />
+            <ListItemText primary={item.text} sx={{ color: "#fff" }} />
           </ListItem>
         ))}
       </List>

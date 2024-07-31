@@ -1,6 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+// components/layout/ChatBox.tsx
+"use client";
+
+import React from "react";
 import { Paper, Typography, Box, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import ChatIcon from "@mui/icons-material/Chat";

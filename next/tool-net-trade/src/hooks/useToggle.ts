@@ -1,3 +1,4 @@
+// hooks/useToggle.ts
 import { useState } from 'react';
 
 const useToggle = (initialState: boolean = true): [boolean, () => void] => {
