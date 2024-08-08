@@ -16,7 +16,7 @@ const Estimates: React.FC = () => {
 
   const companies: Array<"WANHAI" | "SITC"> = ["WANHAI", "SITC"];
   const ships: { [key in "WANHAI" | "SITC"]: string[] } = {
-    WANHAI: ["WANHAI295", "WANHAI342"],
+    WANHAI: ["WAN_HAI_295", "WAN_HAI_342"],
     SITC: ["SITC SHIMIZU", "SITC SUBIC"],
   };
 
@@ -51,7 +51,6 @@ const Estimates: React.FC = () => {
       <h1>船のスケジュールを見る</h1>
 
       <div>
-        <h2>積み地</h2>
         <label style={{ color: "#fff" }}>
           船会社:
           <select
